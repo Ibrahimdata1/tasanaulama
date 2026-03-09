@@ -1,0 +1,96 @@
+@import "tailwindcss";
+
+@theme inline {
+  --color-paper: #FEFBF6;
+  --color-ink: #2D2A26;
+  --color-primary: #1B6B4A;
+  --color-primary-light: #E8F5EE;
+  --color-gold: #C8A84E;
+  --color-gold-light: #FBF5E6;
+  --color-hanafi: #22863A;
+  --color-shafii: #6F42C1;
+  --color-maliki: #0366D6;
+  --color-hanbali: #E36209;
+  --font-thai: var(--font-thai);
+  --font-arabic: var(--font-arabic);
+}
+
+body {
+  background: var(--color-paper);
+  color: var(--color-ink);
+  font-family: var(--font-thai), sans-serif;
+}
+
+/* E-book page container */
+.ebook-page {
+  max-width: 720px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+@media (min-width: 768px) {
+  .ebook-page {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+}
+
+/* Arabic text blocks */
+.arabic-text {
+  font-family: var(--font-arabic), serif;
+  font-size: 1.25rem;
+  line-height: 2;
+  text-align: right;
+  direction: rtl;
+}
+
+@media (min-width: 768px) {
+  .arabic-text {
+    font-size: 1.5rem;
+  }
+}
+
+/* Ornamental divider */
+.section-divider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  color: var(--color-gold);
+}
+
+.section-divider::before,
+.section-divider::after {
+  content: '';
+  flex: 1;
+  height: 1px;
+  background: linear-gradient(to right, transparent, var(--color-gold), transparent);
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Selection color */
+::selection {
+  background: var(--color-primary-light);
+  color: var(--color-primary);
+}
+
+/* Reading progress bar */
+.reading-progress {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 3px;
+  background: var(--color-primary);
+  z-index: 100;
+  transition: width 0.1s ease;
+}

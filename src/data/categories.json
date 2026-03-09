@@ -1,0 +1,194 @@
+[
+  {
+    "id": "taharah",
+    "nameTh": "การทำความสะอาด (ฏอฮาเราะฮฺ)",
+    "nameAr": "الطهارة",
+    "description": "หมวดว่าด้วยการทำความสะอาดร่างกาย เสื้อผ้า และสถานที่ รวมถึงการอาบน้ำละหมาด การอาบน้ำญะนาบะฮฺ และการตะยัมมุม",
+    "icon": "Droplets",
+    "subcategories": [
+      {
+        "id": "wudu",
+        "nameTh": "การอาบน้ำละหมาด (วุฎูอฺ)",
+        "nameAr": "الوضوء",
+        "fatwaIds": ["wudu-wiping-socks", "tayammum-conditions"]
+      },
+      {
+        "id": "ghusl",
+        "nameTh": "การอาบน้ำญะนาบะฮฺ (ฆุสลฺ)",
+        "nameAr": "الغسل",
+        "fatwaIds": []
+      },
+      {
+        "id": "najasah",
+        "nameTh": "สิ่งนะญิส (นะญาสะฮฺ)",
+        "nameAr": "النجاسة",
+        "fatwaIds": []
+      }
+    ]
+  },
+  {
+    "id": "salah",
+    "nameTh": "การละหมาด (ศอลาฮฺ)",
+    "nameAr": "الصلاة",
+    "description": "หมวดว่าด้วยการละหมาดฟัรฎู ละหมาดสุนัต เงื่อนไข รุก่น และสิ่งที่เกี่ยวข้องกับการละหมาด",
+    "icon": "Moon",
+    "subcategories": [
+      {
+        "id": "salah-fard",
+        "nameTh": "ละหมาดฟัรฎู",
+        "nameAr": "الصلوات المفروضة",
+        "fatwaIds": ["qunut-fajr", "combining-prayers-travel"]
+      },
+      {
+        "id": "salah-sunnah",
+        "nameTh": "ละหมาดสุนัต",
+        "nameAr": "صلاة النوافل",
+        "fatwaIds": []
+      },
+      {
+        "id": "salah-jumuah",
+        "nameTh": "ละหมาดวันศุกร์ (ญุมุอะฮฺ)",
+        "nameAr": "صلاة الجمعة",
+        "fatwaIds": []
+      }
+    ]
+  },
+  {
+    "id": "zakah",
+    "nameTh": "ซะกาต",
+    "nameAr": "الزكاة",
+    "description": "หมวดว่าด้วยการจ่ายซะกาต ประเภททรัพย์สินที่ต้องจ่าย เงื่อนไข และผู้มีสิทธิ์รับซะกาต",
+    "icon": "Coins",
+    "subcategories": [
+      {
+        "id": "zakah-mal",
+        "nameTh": "ซะกาตทรัพย์สิน",
+        "nameAr": "زكاة المال",
+        "fatwaIds": ["zakah-jewelry"]
+      },
+      {
+        "id": "zakah-fitr",
+        "nameTh": "ซะกาตฟิฏเราะฮฺ",
+        "nameAr": "زكاة الفطر",
+        "fatwaIds": []
+      }
+    ]
+  },
+  {
+    "id": "sawm",
+    "nameTh": "การถือศีลอด (เศาม์)",
+    "nameAr": "الصيام",
+    "description": "หมวดว่าด้วยการถือศีลอดในเดือนรอมะฎอน การถือศีลอดสุนัต สิ่งที่ทำให้เสียศีลอด และการชดใช้",
+    "icon": "Sun",
+    "subcategories": [
+      {
+        "id": "sawm-muftiraat",
+        "nameTh": "สิ่งที่ทำให้เสียศีลอด",
+        "nameAr": "المفطرات",
+        "fatwaIds": ["fasting-injection"]
+      },
+      {
+        "id": "sawm-ramadan",
+        "nameTh": "ศีลอดเดือนรอมะฎอน",
+        "nameAr": "صيام رمضان",
+        "fatwaIds": []
+      },
+      {
+        "id": "sawm-sunnah",
+        "nameTh": "ศีลอดสุนัต",
+        "nameAr": "صيام التطوع",
+        "fatwaIds": []
+      }
+    ]
+  },
+  {
+    "id": "hajj",
+    "nameTh": "การทำฮัจญ์และอุมเราะฮฺ",
+    "nameAr": "الحج والعمرة",
+    "description": "หมวดว่าด้วยการทำฮัจญ์ อุมเราะฮฺ เงื่อนไข รุก่น วาญิบ และสิ่งต้องห้ามในสภาพอิหฺรอม",
+    "icon": "Mountain",
+    "subcategories": [
+      {
+        "id": "hajj-arkan",
+        "nameTh": "รุก่นและวาญิบของฮัจญ์",
+        "nameAr": "أركان الحج وواجباته",
+        "fatwaIds": ["tawaf-wudu"]
+      },
+      {
+        "id": "umrah",
+        "nameTh": "อุมเราะฮฺ",
+        "nameAr": "العمرة",
+        "fatwaIds": []
+      }
+    ]
+  },
+  {
+    "id": "muamalat",
+    "nameTh": "การค้าขายและธุรกรรม (มุอามะลาต)",
+    "nameAr": "المعاملات",
+    "description": "หมวดว่าด้วยการซื้อขาย การเงินอิสลาม ดอกเบี้ย สัญญา และธุรกรรมทางการเงินต่างๆ",
+    "icon": "Briefcase",
+    "subcategories": [
+      {
+        "id": "muamalat-buyu",
+        "nameTh": "การซื้อขายและดอกเบี้ย",
+        "nameAr": "البيوع والربا",
+        "fatwaIds": ["riba-bank-interest", "gold-installment", "arbun-deposit", "dropshipping-ruling", "mlm-ruling", "cigarette-ruling", "photography-ruling", "working-mixed-gender", "lottery-ruling"]
+      },
+      {
+        "id": "islamic-finance",
+        "nameTh": "การเงินอิสลาม",
+        "nameAr": "التمويل الإسلامي",
+        "fatwaIds": ["insurance-ruling", "cryptocurrency-ruling", "stock-trading", "tawarruq-organized", "credit-card-ruling", "conventional-mortgage-west", "salary-advance"]
+      }
+    ]
+  },
+  {
+    "id": "nikah",
+    "nameTh": "การสมรสและครอบครัว (นิกาหฺ)",
+    "nameAr": "النكاح",
+    "description": "หมวดว่าด้วยการแต่งงาน การหย่า สิทธิของสามีภรรยา การเลี้ยงดูบุตร และมรดก",
+    "icon": "Heart",
+    "subcategories": [
+      {
+        "id": "nikah-shurut",
+        "nameTh": "เงื่อนไขการแต่งงาน",
+        "nameAr": "شروط النكاح",
+        "fatwaIds": ["nikah-wali"]
+      },
+      {
+        "id": "talaq",
+        "nameTh": "การหย่า (ฏอลาก)",
+        "nameAr": "الطلاق",
+        "fatwaIds": []
+      }
+    ]
+  },
+  {
+    "id": "general",
+    "nameTh": "ทั่วไป",
+    "nameAr": "مسائل عامة",
+    "description": "หมวดว่าด้วยปัญหาทั่วไปในชีวิตประจำวัน อาหารฮาลาล การแต่งกาย มารยาท และจริยธรรมอิสลาม",
+    "icon": "BookOpen",
+    "subcategories": [
+      {
+        "id": "general-muharramat",
+        "nameTh": "สิ่งต้องห้าม",
+        "nameAr": "المحرمات",
+        "fatwaIds": ["music-ruling"]
+      },
+      {
+        "id": "food-drink",
+        "nameTh": "อาหารและเครื่องดื่ม",
+        "nameAr": "الأطعمة والأشربة",
+        "fatwaIds": []
+      },
+      {
+        "id": "adab",
+        "nameTh": "มารยาทและจริยธรรม",
+        "nameAr": "الآداب والأخلاق",
+        "fatwaIds": []
+      }
+    ]
+  }
+]
