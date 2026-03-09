@@ -10,19 +10,19 @@
         "id": "wudu",
         "nameTh": "การอาบน้ำละหมาด (วุฎูอฺ)",
         "nameAr": "الوضوء",
-        "fatwaIds": ["wudu-wiping-socks", "tayammum-conditions"]
+        "fatwaIds": ["wudu-wiping-socks", "tayammum-conditions", "touching-quran-without-wudu", "wudu-touching-women", "wudu-eating-camel", "wudu-bleeding", "wudu-sleeping", "water-types-purity", "wudu-order-fard", "nail-polish-wudu"]
       },
       {
         "id": "ghusl",
         "nameTh": "การอาบน้ำญะนาบะฮฺ (ฆุสลฺ)",
         "nameAr": "الغسل",
-        "fatwaIds": []
+        "fatwaIds": ["ghusl-friday"]
       },
       {
         "id": "najasah",
         "nameTh": "สิ่งนะญิส (นะญาสะฮฺ)",
         "nameAr": "النجاسة",
-        "fatwaIds": []
+        "fatwaIds": ["dog-najasah", "cat-leftover-water", "istinja-stones"]
       }
     ]
   },
@@ -175,19 +175,19 @@
         "id": "general-muharramat",
         "nameTh": "สิ่งต้องห้าม",
         "nameAr": "المحرمات",
-        "fatwaIds": ["music-ruling"]
+        "fatwaIds": ["music-ruling", "celebrating-mawlid", "celebrating-birthday", "chess-ruling", "tawassul-ruling", "pictures-animate", "celebrating-national-days"]
       },
       {
         "id": "food-drink",
         "nameTh": "อาหารและเครื่องดื่ม",
         "nameAr": "الأطعمة والأشربة",
-        "fatwaIds": []
+        "fatwaIds": ["eating-seafood", "gelatin-ruling", "stunning-before-slaughter", "eating-with-left-hand"]
       },
       {
         "id": "adab",
         "nameTh": "มารยาทและจริยธรรม",
         "nameAr": "الآداب والأخلاق",
-        "fatwaIds": []
+        "fatwaIds": ["shaking-hands-women", "beard-ruling", "niqab-ruling", "isbal-below-ankles", "visiting-graves", "silk-men-ruling", "dyeing-hair-black", "reciting-quran-dead"]
       }
     ]
   }
