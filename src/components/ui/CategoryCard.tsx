@@ -31,8 +31,8 @@ export default function CategoryCard({ category }: CategoryCardProps) {
   const Icon = iconMap[category.icon] ?? BookOpen;
 
   return (
-    <Link href={`/category/${category.id}`} className="block group">
-      <div className="rounded-xl border border-gray-200 bg-white p-5 transition-all duration-200 group-hover:shadow-md group-hover:border-[var(--color-primary)] group-hover:-translate-y-0.5">
+    <Link href={`/category/${category.id}`} className="block group h-full">
+      <div className="h-full rounded-xl border border-gray-200 bg-white p-5 transition-all duration-200 group-hover:shadow-md group-hover:border-[var(--color-primary)] group-hover:-translate-y-0.5">
         <div className="mb-3 inline-flex items-center justify-center h-10 w-10 rounded-lg bg-[var(--color-primary-light)] text-[var(--color-primary)]">
           <Icon className="h-5 w-5" />
         </div>

@@ -27,7 +27,7 @@ export default function Home() {
         <h2 className="text-2xl font-bold text-[var(--color-ink)] mb-6">
           หมวดหมู่
         </h2>
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-4 items-stretch">
           {categories.map((category) => (
             <CategoryCard key={category.id} category={category} />
           ))}
