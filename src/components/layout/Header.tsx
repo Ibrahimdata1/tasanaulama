@@ -29,7 +29,7 @@ export default function Header() {
               <Link
                 key={link.href}
                 href={link.href}
-                className="text-[var(--color-ink)] hover:text-[var(--color-primary)] transition-colors text-sm font-medium"
+                className="text-[var(--color-ink)] hover:text-[var(--color-primary)] transition-colors text-base font-semibold"
               >
                 {link.label}
               </Link>
