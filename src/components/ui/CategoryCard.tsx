@@ -39,7 +39,7 @@ export default function CategoryCard({ category }: CategoryCardProps) {
         <h3 className="font-semibold text-[var(--color-ink)] mb-1">
           {category.nameTh}
         </h3>
-        <p className="text-sm text-gray-500 line-clamp-2">
+        <p className="text-sm text-gray-500 line-clamp-2" title={category.description}>
           {category.description}
         </p>
       </div>
