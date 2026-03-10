@@ -4,7 +4,6 @@ import {
   getFatwaById,
   getCategory,
 } from '@/lib/data';
-import ReadingProgress from '@/components/ui/ReadingProgress';
 import Breadcrumb from '@/components/ui/Breadcrumb';
 import SummaryBox from '@/components/fatwa/SummaryBox';
 import OpinionBlock from '@/components/fatwa/OpinionBlock';
@@ -55,10 +54,7 @@ export default async function FatwaPage({
     .filter(Boolean);
 
   return (
-    <>
-      <ReadingProgress />
-
-      <article className="ebook-page">
+    <article className="ebook-page">
         {/* Breadcrumb */}
         <div className="pt-6 pb-2">
           <Breadcrumb
@@ -184,6 +180,5 @@ export default async function FatwaPage({
           </p>
         </footer>
       </article>
-    </>
   );
 }
