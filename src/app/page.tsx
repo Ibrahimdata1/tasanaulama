@@ -5,7 +5,7 @@ import FatwaCard from '@/components/ui/FatwaCard';
 
 export default function Home() {
   const categories = getCategories();
-  const allFatawa = getAllFatawa();
+  const latestFatawa = getAllFatawa().slice(-10).reverse();
 
   return (
     <div className="ebook-page">
@@ -42,7 +42,7 @@ export default function Home() {
           ประเด็นล่าสุด
         </h2>
         <div className="space-y-4">
-          {allFatawa.map((fatwa) => (
+          {latestFatawa.map((fatwa) => (
             <FatwaCard key={fatwa.id} fatwa={fatwa} />
           ))}
         </div>

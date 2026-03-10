@@ -4,14 +4,13 @@ import { useSearchParams } from 'next/navigation';
 import { useState, useEffect, Suspense } from 'react';
 import SearchBar from '@/components/ui/SearchBar';
 import FatwaCard from '@/components/ui/FatwaCard';
-import { searchFatawa, type SearchResult } from '@/lib/search';
-import { getAllFatawa } from '@/lib/data';
-import type { Fatwa } from '@/lib/types';
+import { searchFatawa, getAllSlimFatawa, type SearchResult } from '@/lib/search';
+import type { FatwaSlim } from '@/lib/types';
 
 function SearchResults() {
   const searchParams = useSearchParams();
   const query = searchParams.get('q') ?? '';
-  const [results, setResults] = useState<Fatwa[]>([]);
+  const [results, setResults] = useState<FatwaSlim[]>([]);
   const [searched, setSearched] = useState(false);
 
   useEffect(() => {
@@ -20,7 +19,7 @@ function SearchResults() {
       setResults(searchResults.map((r) => r.fatwa));
       setSearched(true);
     } else {
-      setResults(getAllFatawa());
+      setResults(getAllSlimFatawa());
       setSearched(false);
     }
   }, [query]);

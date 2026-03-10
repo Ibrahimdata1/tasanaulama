@@ -39,9 +39,14 @@ export default function CategoryCard({ category }: CategoryCardProps) {
         <h3 className="font-semibold text-[var(--color-ink)] mb-1">
           {category.nameTh}
         </h3>
-        <p className="text-sm text-gray-500 line-clamp-2" title={category.description}>
-          {category.description}
-        </p>
+        <div className="relative group/tip">
+          <p className="text-sm text-gray-500 line-clamp-2">
+            {category.description}
+          </p>
+          <div className="absolute z-30 bottom-full left-0 mb-1.5 w-60 rounded-lg bg-gray-800 px-3 py-2 text-xs text-white shadow-lg opacity-0 pointer-events-none group-hover/tip:opacity-100 transition-opacity duration-100">
+            {category.description}
+          </div>
+        </div>
       </div>
     </Link>
   );

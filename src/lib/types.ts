@@ -14,6 +14,18 @@ export interface Subcategory {
   fatwaIds: string[];
 }
 
+export interface FatwaSlim {
+  id: string;
+  titleTh: string;
+  titleAr: string;
+  categoryId: string;
+  subcategoryId: string;
+  summaryTh: string;
+  introduction: string;
+  keywords: string[];
+  opinions: Array<{ position: string; scholars: Array<{ name: string }>; evidence: unknown[] }>;
+}
+
 export interface Fatwa {
   id: string;
   titleTh: string;

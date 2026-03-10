@@ -1,8 +1,10 @@
 import Fuse, { type IFuseOptions, type FuseResultMatch } from 'fuse.js';
-import type { Fatwa } from './types';
-import { getAllFatawa } from './data';
+import type { FatwaSlim } from './types';
+import searchIndexData from '@/data/search-index.json';
 
-const fuseOptions: IFuseOptions<Fatwa> = {
+const allSlim = searchIndexData as FatwaSlim[];
+
+const fuseOptions: IFuseOptions<FatwaSlim> = {
   keys: [
     { name: 'titleTh', weight: 2.0 },
     { name: 'titleAr', weight: 1.5 },
@@ -10,11 +12,7 @@ const fuseOptions: IFuseOptions<Fatwa> = {
     { name: 'summaryTh', weight: 1.2 },
     { name: 'introduction', weight: 0.8 },
     { name: 'opinions.position', weight: 1.0 },
-    { name: 'opinions.positionAr', weight: 0.8 },
     { name: 'opinions.scholars.name', weight: 1.0 },
-    { name: 'opinions.scholars.nameAr', weight: 0.8 },
-    { name: 'opinions.explanation', weight: 0.6 },
-    { name: 'opinions.evidence.translationTh', weight: 0.5 },
   ],
   threshold: 0.4,
   includeScore: true,
@@ -24,17 +22,17 @@ const fuseOptions: IFuseOptions<Fatwa> = {
   ignoreLocation: true,
 };
 
-let fuseInstance: Fuse<Fatwa> | null = null;
+let fuseInstance: Fuse<FatwaSlim> | null = null;
 
-function getFuseInstance(): Fuse<Fatwa> {
+function getFuseInstance(): Fuse<FatwaSlim> {
   if (!fuseInstance) {
-    fuseInstance = new Fuse(getAllFatawa(), fuseOptions);
+    fuseInstance = new Fuse(allSlim, fuseOptions);
   }
   return fuseInstance;
 }
 
 export interface SearchResult {
-  fatwa: Fatwa;
+  fatwa: FatwaSlim;
   score: number;
   matches: readonly FuseResultMatch[] | undefined;
 }
@@ -54,11 +52,14 @@ export function searchFatawa(query: string): SearchResult[] {
   }));
 }
 
-export function searchByKeyword(keyword: string): Fatwa[] {
-  const allFatawa = getAllFatawa();
+export function getAllSlimFatawa(): FatwaSlim[] {
+  return allSlim;
+}
+
+export function searchByKeyword(keyword: string): FatwaSlim[] {
   const lowerKeyword = keyword.toLowerCase();
 
-  return allFatawa.filter(
+  return allSlim.filter(
     (fatwa) =>
       fatwa.keywords.some((k) => k.toLowerCase().includes(lowerKeyword)) ||
       fatwa.titleTh.toLowerCase().includes(lowerKeyword) ||

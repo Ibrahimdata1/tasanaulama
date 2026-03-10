@@ -1,8 +1,8 @@
 import Link from 'next/link';
-import type { Fatwa } from '@/lib/types';
+import type { Fatwa, FatwaSlim } from '@/lib/types';
 
 interface FatwaCardProps {
-  fatwa: Fatwa;
+  fatwa: Fatwa | FatwaSlim;
 }
 
 export default function FatwaCard({ fatwa }: FatwaCardProps) {
