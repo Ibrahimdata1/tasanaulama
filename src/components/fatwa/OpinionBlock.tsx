@@ -21,7 +21,7 @@ export default function OpinionBlock({ opinion, index }: OpinionBlockProps) {
     : 'border-l-gray-400';
 
   return (
-    <div className={`rounded-lg border border-gray-200 bg-white border-l-4 ${borderColor} overflow-hidden`}>
+    <div className={`rounded-lg border border-gray-200 dark:border-zinc-700 bg-white dark:bg-zinc-800 border-l-4 ${borderColor} overflow-hidden`}>
       <div className="p-5 space-y-4">
         {/* Header */}
         <h3 className="font-bold text-[var(--color-ink)] text-lg">
@@ -53,7 +53,7 @@ export default function OpinionBlock({ opinion, index }: OpinionBlockProps) {
 
         {/* Explanation */}
         {opinion.explanation && (
-          <p className="text-sm text-gray-600 italic leading-relaxed border-t border-gray-100 pt-3">
+          <p className="text-sm text-gray-600 dark:text-zinc-300 italic leading-relaxed border-t border-gray-100 dark:border-zinc-700 pt-3">
             {opinion.explanation}
           </p>
         )}
