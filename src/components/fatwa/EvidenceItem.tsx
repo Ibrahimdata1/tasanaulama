@@ -144,7 +144,7 @@ export default function EvidenceItem({ evidence }: EvidenceItemProps) {
       )}
 
       {/* References */}
-      {evidence.references.length > 0 && (
+      {(evidence.references?.length ?? 0) > 0 && (
         <ReferenceList references={evidence.references} />
       )}
     </div>

@@ -6,24 +6,14 @@
     "description": "หมวดว่าด้วยการทำความสะอาดร่างกาย เสื้อผ้า และสถานที่ รวมถึงการอาบน้ำละหมาด การอาบน้ำญะนาบะฮฺ และการตะยัมมุม",
     "icon": "Droplets",
     "subcategories": [
-      {
-        "id": "wudu",
-        "nameTh": "การอาบน้ำละหมาด (วุฎูอฺ)",
-        "nameAr": "الوضوء",
-        "fatwaIds": ["wudu-wiping-socks", "tayammum-conditions", "touching-quran-without-wudu", "wudu-touching-women", "wudu-eating-camel", "wudu-bleeding", "wudu-sleeping", "water-types-purity", "wudu-order-fard", "nail-polish-wudu"]
-      },
-      {
-        "id": "ghusl",
-        "nameTh": "การอาบน้ำญะนาบะฮฺ (ฆุสลฺ)",
-        "nameAr": "الغسل",
-        "fatwaIds": ["ghusl-friday"]
-      },
-      {
-        "id": "najasah",
-        "nameTh": "สิ่งนะญิส (นะญาสะฮฺ)",
-        "nameAr": "النجاسة",
-        "fatwaIds": ["dog-najasah", "cat-leftover-water", "istinja-stones"]
-      }
+      { "id": "wudu", "nameTh": "วุฎูอฺ", "nameAr": "الوضوء", "fatwaIds": [] },
+      { "id": "ghusl", "nameTh": "ฆุสลฺ", "nameAr": "الغسل", "fatwaIds": [] },
+      { "id": "najasah", "nameTh": "นะญาสะฮฺ", "nameAr": "النجاسة", "fatwaIds": [] },
+      { "id": "tayammum", "nameTh": "ตะยัมมุม", "nameAr": "التيمم", "fatwaIds": [] },
+      { "id": "hayd", "nameTh": "ประจำเดือน (หัยฎ์)", "nameAr": "الحيض", "fatwaIds": [] },
+      { "id": "nifas", "nameTh": "เลือดหลังคลอด (นิฟาส)", "nameAr": "النفاس", "fatwaIds": [] },
+      { "id": "istinja", "nameTh": "อิสติญาอ์", "nameAr": "الاستنجاء", "fatwaIds": [] },
+      { "id": "water", "nameTh": "น้ำและการใช้น้ำ", "nameAr": "المياه", "fatwaIds": [] }
     ]
   },
   {
@@ -33,24 +23,25 @@
     "description": "หมวดว่าด้วยการละหมาดฟัรฎู ละหมาดสุนัต เงื่อนไข รุก่น และสิ่งที่เกี่ยวข้องกับการละหมาด",
     "icon": "Moon",
     "subcategories": [
-      {
-        "id": "salah-fard",
-        "nameTh": "ละหมาดฟัรฎู",
-        "nameAr": "الصلوات المفروضة",
-        "fatwaIds": ["qunut-fajr", "combining-prayers-travel"]
-      },
-      {
-        "id": "salah-sunnah",
-        "nameTh": "ละหมาดสุนัต",
-        "nameAr": "صلاة النوافل",
-        "fatwaIds": []
-      },
-      {
-        "id": "salah-jumuah",
-        "nameTh": "ละหมาดวันศุกร์ (ญุมุอะฮฺ)",
-        "nameAr": "صلاة الجمعة",
-        "fatwaIds": []
-      }
+      { "id": "salah-fard", "nameTh": "ละหมาดฟัรฎู", "nameAr": "الصلوات المفروضة", "fatwaIds": [] },
+      { "id": "salah-sunnah", "nameTh": "ละหมาดสุนัต", "nameAr": "صلاة النوافل", "fatwaIds": [] },
+      { "id": "salah-nafl", "nameTh": "ละหมาดนะฟล์", "nameAr": "النوافل", "fatwaIds": [] },
+      { "id": "salah-jumuah", "nameTh": "ละหมาดวันศุกร์", "nameAr": "صلاة الجمعة", "fatwaIds": [] },
+      { "id": "salah-congregation", "nameTh": "ละหมาดญะมาอะฮฺ", "nameAr": "صلاة الجماعة", "fatwaIds": [] },
+      { "id": "congregation", "nameTh": "ญะมาอะฮฺ", "nameAr": "الجماعة", "fatwaIds": [] },
+      { "id": "adhan", "nameTh": "อาซาน", "nameAr": "الأذان", "fatwaIds": [] },
+      { "id": "conditions", "nameTh": "เงื่อนไขละหมาด", "nameAr": "شروط الصلاة", "fatwaIds": [] },
+      { "id": "qiblah", "nameTh": "กิบลัต", "nameAr": "القبلة", "fatwaIds": [] },
+      { "id": "ruku", "nameTh": "รุกูอฺ", "nameAr": "الركوع", "fatwaIds": [] },
+      { "id": "sujud-sahw", "nameTh": "สุญูดสะฮฺวฺ", "nameAr": "سجود السهو", "fatwaIds": [] },
+      { "id": "sujud-tilawah", "nameTh": "สุญูดติลาวะฮฺ", "nameAr": "سجود التلاوة", "fatwaIds": [] },
+      { "id": "qiraah", "nameTh": "กิรออะฮฺ", "nameAr": "القراءة", "fatwaIds": [] },
+      { "id": "dhikr", "nameTh": "ซิกรฺในละหมาด", "nameAr": "الذكر في الصلاة", "fatwaIds": [] },
+      { "id": "dua", "nameTh": "ดุอาอ์", "nameAr": "الدعاء", "fatwaIds": [] },
+      { "id": "intention", "nameTh": "เนียต", "nameAr": "النية", "fatwaIds": [] },
+      { "id": "salah-travel", "nameTh": "ละหมาดระหว่างเดินทาง", "nameAr": "صلاة المسافر", "fatwaIds": [] },
+      { "id": "sunnah-salah", "nameTh": "สุนนะฮฺรอวาติบ", "nameAr": "السنن الرواتب", "fatwaIds": [] },
+      { "id": "salah-recitation", "nameTh": "การอ่านในละหมาด", "nameAr": "القراءة في الصلاة", "fatwaIds": [] }
     ]
   },
   {
@@ -60,18 +51,23 @@
     "description": "หมวดว่าด้วยการจ่ายซะกาต ประเภททรัพย์สินที่ต้องจ่าย เงื่อนไข และผู้มีสิทธิ์รับซะกาต",
     "icon": "Coins",
     "subcategories": [
-      {
-        "id": "zakah-mal",
-        "nameTh": "ซะกาตทรัพย์สิน",
-        "nameAr": "زكاة المال",
-        "fatwaIds": ["zakah-jewelry"]
-      },
-      {
-        "id": "zakah-fitr",
-        "nameTh": "ซะกาตฟิฏเราะฮฺ",
-        "nameAr": "زكاة الفطر",
-        "fatwaIds": []
-      }
+      { "id": "zakah-mal", "nameTh": "ซะกาตทรัพย์สิน", "nameAr": "زكاة المال", "fatwaIds": [] },
+      { "id": "zakah-types", "nameTh": "ประเภทซะกาต", "nameAr": "أنواع الزكاة", "fatwaIds": [] },
+      { "id": "zakah-fitr", "nameTh": "ซะกาตฟิฏเราะฮฺ", "nameAr": "زكاة الفطر", "fatwaIds": [] },
+      { "id": "zakah-gold", "nameTh": "ซะกาตทองคำและเงิน", "nameAr": "زكاة الذهب والفضة", "fatwaIds": [] },
+      { "id": "zakah-livestock", "nameTh": "ซะกาตปศุสัตว์", "nameAr": "زكاة الأنعام", "fatwaIds": [] },
+      { "id": "zakah-crops", "nameTh": "ซะกาตพืชผล", "nameAr": "زكاة الزروع", "fatwaIds": [] },
+      { "id": "crops", "nameTh": "พืชผล", "nameAr": "الزروع والثمار", "fatwaIds": [] },
+      { "id": "zakah-currency", "nameTh": "ซะกาตเงิน", "nameAr": "زكاة النقود", "fatwaIds": [] },
+      { "id": "zakah-shares", "nameTh": "ซะกาตหุ้น", "nameAr": "زكاة الأسهم", "fatwaIds": [] },
+      { "id": "zakah-nisab", "nameTh": "นิศอบ", "nameAr": "النصاب", "fatwaIds": [] },
+      { "id": "nisab", "nameTh": "นิศอบซะกาต", "nameAr": "نصاب الزكاة", "fatwaIds": [] },
+      { "id": "zakah-conditions", "nameTh": "เงื่อนไขซะกาต", "nameAr": "شروط الزكاة", "fatwaIds": [] },
+      { "id": "conditions", "nameTh": "เงื่อนไข", "nameAr": "الشروط", "fatwaIds": [] },
+      { "id": "distribution", "nameTh": "การแจกจ่ายซะกาต", "nameAr": "توزيع الزكاة", "fatwaIds": [] },
+      { "id": "zakah-mustahiq", "nameTh": "ผู้มีสิทธิ์รับซะกาต", "nameAr": "مستحقو الزكاة", "fatwaIds": [] },
+      { "id": "payment", "nameTh": "การจ่ายซะกาต", "nameAr": "إخراج الزكاة", "fatwaIds": [] },
+      { "id": "zakah-property", "nameTh": "ซะกาตอสังหาริมทรัพย์", "nameAr": "زكاة العقارات", "fatwaIds": [] }
     ]
   },
   {
@@ -81,24 +77,25 @@
     "description": "หมวดว่าด้วยการถือศีลอดในเดือนรอมะฎอน การถือศีลอดสุนัต สิ่งที่ทำให้เสียศีลอด และการชดใช้",
     "icon": "Sun",
     "subcategories": [
-      {
-        "id": "sawm-muftiraat",
-        "nameTh": "สิ่งที่ทำให้เสียศีลอด",
-        "nameAr": "المفطرات",
-        "fatwaIds": ["fasting-injection"]
-      },
-      {
-        "id": "sawm-ramadan",
-        "nameTh": "ศีลอดเดือนรอมะฎอน",
-        "nameAr": "صيام رمضان",
-        "fatwaIds": []
-      },
-      {
-        "id": "sawm-sunnah",
-        "nameTh": "ศีลอดสุนัต",
-        "nameAr": "صيام التطوع",
-        "fatwaIds": []
-      }
+      { "id": "sawm-muftiraat", "nameTh": "สิ่งที่ทำให้เสียศีลอด", "nameAr": "المفطرات", "fatwaIds": [] },
+      { "id": "sawm-ramadan", "nameTh": "ศีลอดรอมะฎอน", "nameAr": "صيام رمضان", "fatwaIds": [] },
+      { "id": "sawm-sunnah", "nameTh": "ศีลอดสุนัต", "nameAr": "صيام التطوع", "fatwaIds": [] },
+      { "id": "sawm-qada", "nameTh": "การชดใช้ศีลอด", "nameAr": "قضاء الصوم", "fatwaIds": [] },
+      { "id": "sawm-kaffara", "nameTh": "กัฟฟาเราะฮฺ", "nameAr": "الكفارة", "fatwaIds": [] },
+      { "id": "sawm-niyyah", "nameTh": "เนียตถือศีลอด", "nameAr": "نية الصيام", "fatwaIds": [] },
+      { "id": "sawm-hilal", "nameTh": "การเห็นพระจันทร์", "nameAr": "رؤية الهلال", "fatwaIds": [] },
+      { "id": "sawm-musafir", "nameTh": "ศีลอดระหว่างเดินทาง", "nameAr": "صيام المسافر", "fatwaIds": [] },
+      { "id": "sawm-fidyah", "nameTh": "ฟิดยะฮฺ", "nameAr": "الفدية", "fatwaIds": [] },
+      { "id": "sawm-tatawwu", "nameTh": "ศีลอดสมัครใจ", "nameAr": "التطوع بالصيام", "fatwaIds": [] },
+      { "id": "sawm-mubahat", "nameTh": "สิ่งอนุญาตในศีลอด", "nameAr": "المباحات في الصيام", "fatwaIds": [] },
+      { "id": "sawm-makruhat", "nameTh": "สิ่งที่กะรอฮะฮฺในศีลอด", "nameAr": "المكروهات في الصيام", "fatwaIds": [] },
+      { "id": "sawm-suhur", "nameTh": "ซะฮูร", "nameAr": "السحور", "fatwaIds": [] },
+      { "id": "sawm-ahl-al-athar", "nameTh": "ทัศนะอะฮฺลุลอะษัร", "nameAr": "أهل الأثر", "fatwaIds": [] },
+      { "id": "sawm-nadhr", "nameTh": "ศีลอดนะซัร", "nameAr": "صيام النذر", "fatwaIds": [] },
+      { "id": "itikaf", "nameTh": "อิอฺติกาฟ", "nameAr": "الاعتكاف", "fatwaIds": [] },
+      { "id": "laylatul-qadr", "nameTh": "ลัยละตุลก็อดร์", "nameAr": "ليلة القدر", "fatwaIds": [] },
+      { "id": "tarawih", "nameTh": "ตะรอวีหฺ", "nameAr": "التراويح", "fatwaIds": [] },
+      { "id": "zakat-fitr", "nameTh": "ซะกาตฟิฏร์", "nameAr": "زكاة الفطر", "fatwaIds": [] }
     ]
   },
   {
@@ -108,18 +105,21 @@
     "description": "หมวดว่าด้วยการทำฮัจญ์ อุมเราะฮฺ เงื่อนไข รุก่น วาญิบ และสิ่งต้องห้ามในสภาพอิหฺรอม",
     "icon": "Mountain",
     "subcategories": [
-      {
-        "id": "hajj-arkan",
-        "nameTh": "รุก่นและวาญิบของฮัจญ์",
-        "nameAr": "أركان الحج وواجباته",
-        "fatwaIds": ["tawaf-wudu"]
-      },
-      {
-        "id": "umrah",
-        "nameTh": "อุมเราะฮฺ",
-        "nameAr": "العمرة",
-        "fatwaIds": []
-      }
+      { "id": "hajj-arkan", "nameTh": "รุก่นและวาญิบของฮัจญ์", "nameAr": "أركان الحج وواجباته", "fatwaIds": [] },
+      { "id": "hajj-obligation", "nameTh": "ความวาญิบของฮัจญ์", "nameAr": "وجوب الحج", "fatwaIds": [] },
+      { "id": "hajj-istita", "nameTh": "อิสติฏออะฮฺ", "nameAr": "الاستطاعة", "fatwaIds": [] },
+      { "id": "hajj-ihram", "nameTh": "อิหฺรอม", "nameAr": "الإحرام", "fatwaIds": [] },
+      { "id": "hajj-tawaf", "nameTh": "ตอวาฟ", "nameAr": "الطواف", "fatwaIds": [] },
+      { "id": "hajj-saee", "nameTh": "ซะอีย์", "nameAr": "السعي", "fatwaIds": [] },
+      { "id": "hajj-stoning", "nameTh": "การขว้างหิน", "nameAr": "رمي الجمرات", "fatwaIds": [] },
+      { "id": "hajj-mina", "nameTh": "มินาและมุซดะลิฟะฮฺ", "nameAr": "منى ومزدلفة", "fatwaIds": [] },
+      { "id": "hajj-wajibat", "nameTh": "วาญิบของฮัจญ์", "nameAr": "واجبات الحج", "fatwaIds": [] },
+      { "id": "hajj-hady", "nameTh": "ฮัดยฺ", "nameAr": "الهدي", "fatwaIds": [] },
+      { "id": "hajj-mahram", "nameTh": "มะหฺรัม", "nameAr": "المحرم", "fatwaIds": [] },
+      { "id": "hajj-badal", "nameTh": "ฮัจญ์แทน", "nameAr": "الحج عن الغير", "fatwaIds": [] },
+      { "id": "hajj-umrah", "nameTh": "อุมเราะฮฺในฮัจญ์", "nameAr": "العمرة مع الحج", "fatwaIds": [] },
+      { "id": "umrah", "nameTh": "อุมเราะฮฺ", "nameAr": "العمرة", "fatwaIds": [] },
+      { "id": "hajj", "nameTh": "ฮัจญ์ทั่วไป", "nameAr": "الحج", "fatwaIds": [] }
     ]
   },
   {
@@ -129,18 +129,18 @@
     "description": "หมวดว่าด้วยการซื้อขาย การเงินอิสลาม ดอกเบี้ย สัญญา และธุรกรรมทางการเงินต่างๆ",
     "icon": "Briefcase",
     "subcategories": [
-      {
-        "id": "muamalat-buyu",
-        "nameTh": "การซื้อขายและดอกเบี้ย",
-        "nameAr": "البيوع والربا",
-        "fatwaIds": ["riba-bank-interest", "gold-installment", "arbun-deposit", "dropshipping-ruling", "mlm-ruling", "cigarette-ruling", "photography-ruling", "working-mixed-gender", "lottery-ruling"]
-      },
-      {
-        "id": "islamic-finance",
-        "nameTh": "การเงินอิสลาม",
-        "nameAr": "التمويل الإسلامي",
-        "fatwaIds": ["insurance-ruling", "cryptocurrency-ruling", "stock-trading", "tawarruq-organized", "credit-card-ruling", "conventional-mortgage-west", "salary-advance"]
-      }
+      { "id": "muamalat-buyu", "nameTh": "การซื้อขาย", "nameAr": "البيوع", "fatwaIds": [] },
+      { "id": "islamic-finance", "nameTh": "การเงินอิสลาม", "nameAr": "التمويل الإسلامي", "fatwaIds": [] },
+      { "id": "riba", "nameTh": "ริบา (ดอกเบี้ย)", "nameAr": "الربا", "fatwaIds": [] },
+      { "id": "contracts", "nameTh": "สัญญา", "nameAr": "العقود", "fatwaIds": [] },
+      { "id": "muamalat-finance", "nameTh": "การเงิน", "nameAr": "المالية", "fatwaIds": [] },
+      { "id": "muamalat-mawaris", "nameTh": "มรดก", "nameAr": "المواريث", "fatwaIds": [] },
+      { "id": "insurance", "nameTh": "ประกัน", "nameAr": "التأمين", "fatwaIds": [] },
+      { "id": "investment", "nameTh": "การลงทุน", "nameAr": "الاستثمار", "fatwaIds": [] },
+      { "id": "employment", "nameTh": "การจ้างงาน", "nameAr": "الإجارة", "fatwaIds": [] },
+      { "id": "modern-commerce", "nameTh": "การค้าสมัยใหม่", "nameAr": "التجارة الحديثة", "fatwaIds": [] },
+      { "id": "waqf", "nameTh": "วักฟ์", "nameAr": "الوقف", "fatwaIds": [] },
+      { "id": "zakah-types", "nameTh": "ซะกาต", "nameAr": "الزكاة", "fatwaIds": [] }
     ]
   },
   {
@@ -150,18 +150,19 @@
     "description": "หมวดว่าด้วยการแต่งงาน การหย่า สิทธิของสามีภรรยา การเลี้ยงดูบุตร และมรดก",
     "icon": "Heart",
     "subcategories": [
-      {
-        "id": "nikah-shurut",
-        "nameTh": "เงื่อนไขการแต่งงาน",
-        "nameAr": "شروط النكاح",
-        "fatwaIds": ["nikah-wali"]
-      },
-      {
-        "id": "talaq",
-        "nameTh": "การหย่า (ฏอลาก)",
-        "nameAr": "الطلاق",
-        "fatwaIds": []
-      }
+      { "id": "nikah-shurut", "nameTh": "เงื่อนไขการแต่งงาน", "nameAr": "شروط النكاح", "fatwaIds": [] },
+      { "id": "nikah-wali", "nameTh": "วะลีย์", "nameAr": "الولي", "fatwaIds": [] },
+      { "id": "mahr", "nameTh": "มะหัรฺ", "nameAr": "المهر", "fatwaIds": [] },
+      { "id": "talaq", "nameTh": "การหย่า (ฏอลาก)", "nameAr": "الطلاق", "fatwaIds": [] },
+      { "id": "khul", "nameTh": "คุลอ์", "nameAr": "الخلع", "fatwaIds": [] },
+      { "id": "iddah", "nameTh": "อิดดะฮฺ", "nameAr": "العدة", "fatwaIds": [] },
+      { "id": "hadanah", "nameTh": "การดูแลบุตร", "nameAr": "الحضانة", "fatwaIds": [] },
+      { "id": "nafaqah", "nameTh": "นะฟะกะฮฺ", "nameAr": "النفقة", "fatwaIds": [] },
+      { "id": "polygamy", "nameTh": "การมีภรรยาหลายคน", "nameAr": "التعدد", "fatwaIds": [] },
+      { "id": "kafaah", "nameTh": "กะฟาอะฮฺ", "nameAr": "الكفاءة", "fatwaIds": [] },
+      { "id": "huquq-zawjain", "nameTh": "สิทธิสามีภรรยา", "nameAr": "حقوق الزوجين", "fatwaIds": [] },
+      { "id": "fiqh-tibbi", "nameTh": "ฟิกฮ์ทางการแพทย์", "nameAr": "الفقه الطبي", "fatwaIds": [] },
+      { "id": "mawaris", "nameTh": "มรดก", "nameAr": "المواريث", "fatwaIds": [] }
     ]
   },
   {
@@ -171,24 +172,28 @@
     "description": "หมวดว่าด้วยปัญหาทั่วไปในชีวิตประจำวัน อาหารฮาลาล การแต่งกาย มารยาท และจริยธรรมอิสลาม",
     "icon": "BookOpen",
     "subcategories": [
-      {
-        "id": "general-muharramat",
-        "nameTh": "สิ่งต้องห้าม",
-        "nameAr": "المحرمات",
-        "fatwaIds": ["music-ruling", "celebrating-mawlid", "celebrating-birthday", "chess-ruling", "tawassul-ruling", "pictures-animate", "celebrating-national-days"]
-      },
-      {
-        "id": "food-drink",
-        "nameTh": "อาหารและเครื่องดื่ม",
-        "nameAr": "الأطعمة والأشربة",
-        "fatwaIds": ["eating-seafood", "gelatin-ruling", "stunning-before-slaughter", "eating-with-left-hand"]
-      },
-      {
-        "id": "adab",
-        "nameTh": "มารยาทและจริยธรรม",
-        "nameAr": "الآداب والأخلاق",
-        "fatwaIds": ["shaking-hands-women", "beard-ruling", "niqab-ruling", "isbal-below-ankles", "visiting-graves", "silk-men-ruling", "dyeing-hair-black", "reciting-quran-dead"]
-      }
+      { "id": "general-muharramat", "nameTh": "สิ่งต้องห้าม", "nameAr": "المحرمات", "fatwaIds": [] },
+      { "id": "food-drink", "nameTh": "อาหารและเครื่องดื่ม", "nameAr": "الأطعمة والأشربة", "fatwaIds": [] },
+      { "id": "adab", "nameTh": "มารยาทและจริยธรรม", "nameAr": "الآداب والأخلاق", "fatwaIds": [] },
+      { "id": "hudud", "nameTh": "หุดูด", "nameAr": "الحدود", "fatwaIds": [] },
+      { "id": "aqidah", "nameTh": "อะกีดะฮฺ", "nameAr": "العقيدة", "fatwaIds": [] },
+      { "id": "general-aqeedah", "nameTh": "อะกีดะฮฺทั่วไป", "nameAr": "العقيدة العامة", "fatwaIds": [] },
+      { "id": "akhlaq", "nameTh": "จริยธรรม", "nameAr": "الأخلاق", "fatwaIds": [] },
+      { "id": "interfaith", "nameTh": "ความสัมพันธ์ต่างศาสนา", "nameAr": "العلاقة مع غير المسلمين", "fatwaIds": [] },
+      { "id": "gender", "nameTh": "เพศและครอบครัว", "nameAr": "قضايا المرأة والأسرة", "fatwaIds": [] },
+      { "id": "siyasah", "nameTh": "การเมืองและสังคม", "nameAr": "السياسة الشرعية", "fatwaIds": [] },
+      { "id": "usul-fiqh", "nameTh": "อุศูลุลฟิกฮ์", "nameAr": "أصول الفقه", "fatwaIds": [] },
+      { "id": "entertainment", "nameTh": "ความบันเทิง", "nameAr": "الترفيه", "fatwaIds": [] },
+      { "id": "animals", "nameTh": "สัตว์", "nameAr": "الحيوانات", "fatwaIds": [] },
+      { "id": "dress", "nameTh": "การแต่งกาย", "nameAr": "اللباس", "fatwaIds": [] },
+      { "id": "food", "nameTh": "อาหาร", "nameAr": "الأطعمة", "fatwaIds": [] },
+      { "id": "education", "nameTh": "การศึกษา", "nameAr": "التعليم", "fatwaIds": [] },
+      { "id": "mawaris", "nameTh": "มรดก", "nameAr": "المواريث", "fatwaIds": [] },
+      { "id": "quran", "nameTh": "กุรอาน", "nameAr": "القرآن الكريم", "fatwaIds": [] },
+      { "id": "contemporary", "nameTh": "ประเด็นร่วมสมัย", "nameAr": "القضايا المعاصرة", "fatwaIds": [] },
+      { "id": "general-contemporary", "nameTh": "ร่วมสมัย", "nameAr": "المعاصرة", "fatwaIds": [] },
+      { "id": "spirituality", "nameTh": "จิตวิญญาณ", "nameAr": "الروحانيات", "fatwaIds": [] },
+      { "id": "salah", "nameTh": "ละหมาด (ทั่วไป)", "nameAr": "الصلاة", "fatwaIds": [] }
     ]
   }
 ]

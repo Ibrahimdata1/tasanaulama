@@ -50,7 +50,7 @@ export default async function FatwaPage({
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   const sourceUrl = (fatwa as any).sourceUrl as string | undefined;
   const category = getCategory(fatwa.categoryId);
-  const relatedFatwas = fatwa.relatedFatwaIds
+  const relatedFatwas = (fatwa.relatedFatwaIds ?? [])
     .map((rid) => getFatwaById(rid))
     .filter(Boolean);
 

@@ -1,5 +1,5 @@
 import { notFound } from 'next/navigation';
-import { getCategories, getCategory, getFatwaById } from '@/lib/data';
+import { getCategories, getCategory, getFatawaBySubcategory } from '@/lib/data';
 import Breadcrumb from '@/components/ui/Breadcrumb';
 import FatwaCard from '@/components/ui/FatwaCard';
 import {
@@ -93,9 +93,7 @@ export default async function CategoryPage({
 
       {/* Subcategories */}
       {category.subcategories.map((sub) => {
-        const fatwas = sub.fatwaIds
-          .map((id) => getFatwaById(id))
-          .filter(Boolean);
+        const fatwas = getFatawaBySubcategory(category.id, sub.id);
 
         return (
           <section key={sub.id} className="py-6">
@@ -108,10 +106,9 @@ export default async function CategoryPage({
 
             {fatwas.length > 0 ? (
               <div className="space-y-4">
-                {fatwas.map(
-                  (fatwa) =>
-                    fatwa && <FatwaCard key={fatwa.id} fatwa={fatwa} />
-                )}
+                {fatwas.map((fatwa) => (
+                  <FatwaCard key={fatwa.id} fatwa={fatwa} />
+                ))}
               </div>
             ) : (
               <p className="text-gray-400 text-sm py-4 text-center">
