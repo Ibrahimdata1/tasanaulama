@@ -43,7 +43,7 @@ export default function SubcategoryTabs({ tabs }: SubcategoryTabsProps) {
   if (activeTabs.length === 0) return null;
 
   return (
-    <div className="sticky top-16 z-40 bg-[#FEFBF6]/95 backdrop-blur border-b border-gray-200">
+    <div className="sticky top-16 z-40 bg-[var(--color-paper)]/95 backdrop-blur border-b border-[var(--color-border,#e5e7eb)]">
       <div className="flex gap-1 overflow-x-auto scrollbar-hide px-1 py-2">
         {activeTabs.map(({ id, nameTh, count }) => (
           <button

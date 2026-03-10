@@ -28,9 +28,17 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="th">
+    <html lang="th" suppressHydrationWarning>
+      <head>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `(function(){try{var t=localStorage.getItem('theme');var d=t?t==='dark':window.matchMedia('(prefers-color-scheme: dark)').matches;document.documentElement.setAttribute('data-theme',d?'dark':'light');}catch(e){}})()`,
+          }}
+        />
+      </head>
       <body
-        className={`${notoSansThai.variable} ${notoNaskhArabic.variable} antialiased bg-[#FEFBF6] text-[#2D2A26]`}
+        className={`${notoSansThai.variable} ${notoNaskhArabic.variable} antialiased`}
+        style={{ background: 'var(--color-paper)', color: 'var(--color-ink)' }}
       >
         <Header />
         <main className="min-h-screen">{children}</main>

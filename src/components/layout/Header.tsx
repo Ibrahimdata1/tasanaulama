@@ -3,6 +3,7 @@
 import { useState } from 'react';
 import Link from 'next/link';
 import { BookOpen, Menu, X } from 'lucide-react';
+import ThemeToggle from '@/components/ui/ThemeToggle';
 
 export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -11,10 +12,11 @@ export default function Header() {
     { href: '/', label: 'หน้าแรก' },
     { href: '/category', label: 'หมวดหมู่' },
     { href: '/search', label: 'ค้นหา' },
+    { href: '/glossary', label: 'คำศัพท์' },
   ];
 
   return (
-    <header className="sticky top-0 z-50 bg-[#FEFBF6]/95 backdrop-blur shadow-sm">
+    <header className="sticky top-0 z-50 bg-[var(--color-paper)]/95 backdrop-blur shadow-sm">
       <div className="mx-auto max-w-6xl px-4">
         <div className="flex h-16 items-center justify-between">
           {/* Logo */}
@@ -36,15 +38,18 @@ export default function Header() {
             ))}
           </nav>
 
-          {/* Mobile hamburger */}
-          <button
-            type="button"
-            className="md:hidden p-2 text-[var(--color-ink)]"
-            onClick={() => setMenuOpen(!menuOpen)}
-            aria-label="Toggle menu"
-          >
-            {menuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
-          </button>
+          {/* Theme toggle + Mobile hamburger */}
+          <div className="flex items-center gap-1">
+            <ThemeToggle />
+            <button
+              type="button"
+              className="md:hidden p-2 text-[var(--color-ink)]"
+              onClick={() => setMenuOpen(!menuOpen)}
+              aria-label="Toggle menu"
+            >
+              {menuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
+            </button>
+          </div>
         </div>
 
         {/* Mobile menu */}
