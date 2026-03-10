@@ -40,7 +40,7 @@ export function generateMetadata({
     const category = getCategory(slug);
     return {
       title: category
-        ? `${category.nameTh} — ฟัตวาออนไลน์`
+        ? `${category.nameTh} — ทัศนะอุละมาอฺ`
         : 'ไม่พบหมวดหมู่',
       description: category?.description,
     };

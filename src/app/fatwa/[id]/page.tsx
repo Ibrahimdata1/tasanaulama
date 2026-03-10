@@ -28,7 +28,7 @@ export async function generateMetadata({
     return { title: 'ไม่พบฟัตวา' };
   }
   return {
-    title: `${fatwa.titleTh} — ฟัตวาออนไลน์`,
+    title: `${fatwa.titleTh} — ทัศนะอุละมาอฺ`,
     description: fatwa.summaryTh,
     keywords: fatwa.keywords,
   };

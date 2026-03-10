@@ -7,7 +7,7 @@ export default function Footer() {
           ควรตรวจสอบกับผู้รู้ (อุละมาอฺ) ก่อนนำไปปฏิบัติ
         </p>
         <p className="text-xs text-gray-400">
-          &copy; 2024 ฟัตวาออนไลน์. สงวนลิขสิทธิ์.
+          &copy; 2024 ทัศนะอุละมาอฺ. สงวนลิขสิทธิ์.
         </p>
       </div>
     </footer>

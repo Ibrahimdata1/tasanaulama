@@ -12,7 +12,7 @@ export default function Home() {
       {/* Hero Section */}
       <section className="text-center py-16 md:py-24">
         <h1 className="text-4xl md:text-5xl font-bold text-[var(--color-ink)] mb-4 leading-tight">
-          ฟัตวาออนไลน์
+          ทัศนะอุละมาอฺ
         </h1>
         <p className="text-lg md:text-xl text-gray-500 mb-10 max-w-xl mx-auto leading-relaxed">
           ค้นหาทัศนะทางฟิกฮ์อิสลาม พร้อมหลักฐานและอ้างอิง

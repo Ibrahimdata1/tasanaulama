@@ -20,7 +20,7 @@ export default function Header() {
           {/* Logo */}
           <Link href="/" className="flex items-center gap-2 text-[var(--color-primary)] font-bold text-xl">
             <BookOpen className="h-6 w-6" />
-            <span>ฟัตวาออนไลน์</span>
+            <span>ทัศนะอุละมาอฺ</span>
           </Link>
 
           {/* Desktop nav */}

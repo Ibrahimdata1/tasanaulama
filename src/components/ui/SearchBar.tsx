@@ -1,6 +1,6 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import { useRouter } from 'next/navigation';
 import { Search } from 'lucide-react';
 
@@ -17,44 +17,52 @@ export default function SearchBar({
 }: SearchBarProps) {
   const [query, setQuery] = useState(defaultValue);
   const router = useRouter();
+  const debounceRef = useRef<ReturnType<typeof setTimeout> | null>(null);
 
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    const trimmed = query.trim();
-    if (trimmed) {
-      router.push(`/search?q=${encodeURIComponent(trimmed)}`);
-    }
+  useEffect(() => {
+    setQuery(defaultValue);
+  }, [defaultValue]);
+
+  const handleChange = (value: string) => {
+    setQuery(value);
+    if (debounceRef.current) clearTimeout(debounceRef.current);
+    debounceRef.current = setTimeout(() => {
+      const trimmed = value.trim();
+      router.push(trimmed ? `/search?q=${encodeURIComponent(trimmed)}` : '/search');
+    }, 300);
+  };
+
+  const sharedInputProps = {
+    type: 'search' as const,
+    value: query,
+    onChange: (e: React.ChangeEvent<HTMLInputElement>) => handleChange(e.target.value),
+    placeholder,
+    autoComplete: 'off',
   };
 
   if (size === 'lg') {
     return (
-      <form onSubmit={handleSubmit} className="w-full max-w-2xl mx-auto">
+      <div className="w-full max-w-2xl mx-auto">
         <div className="relative">
           <Search className="absolute left-4 top-1/2 -translate-y-1/2 h-6 w-6 text-gray-400" />
           <input
-            type="text"
-            value={query}
-            onChange={(e) => setQuery(e.target.value)}
-            placeholder={placeholder}
+            {...sharedInputProps}
             className="w-full rounded-2xl border border-gray-200 bg-white py-4 pl-13 pr-5 text-lg shadow-md placeholder:text-gray-400 focus:border-[var(--color-gold)] focus:ring-2 focus:ring-[var(--color-gold-light)] focus:outline-none transition-all"
           />
         </div>
-      </form>
+      </div>
     );
   }
 
   return (
-    <form onSubmit={handleSubmit} className="w-full">
+    <div className="w-full">
       <div className="relative">
         <Search className="absolute left-3 top-1/2 -translate-y-1/2 h-4 w-4 text-gray-400" />
         <input
-          type="text"
-          value={query}
-          onChange={(e) => setQuery(e.target.value)}
-          placeholder={placeholder}
+          {...sharedInputProps}
           className="w-full rounded-lg border border-gray-200 bg-white py-2 pl-9 pr-3 text-sm placeholder:text-gray-400 focus:border-[var(--color-primary)] focus:ring-1 focus:ring-[var(--color-primary-light)] focus:outline-none transition-all"
         />
       </div>
-    </form>
+    </div>
   );
 }
