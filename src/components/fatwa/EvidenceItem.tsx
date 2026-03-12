@@ -132,6 +132,19 @@ export default function EvidenceItem({ evidence }: EvidenceItemProps) {
         </>
       )}
 
+      {/* Scholarly Reasoning */}
+      {evidence.type === 'scholarly_reasoning' && (
+        <>
+          <TypeBadge emoji="🔍" label="เหตุผลทางวิชาการ" />
+          {evidence.reasoning && (
+            <p className="text-gray-700 dark:text-zinc-300">{evidence.reasoning}</p>
+          )}
+          {evidence.translationTh && (
+            <p className="text-gray-700 dark:text-zinc-300">{evidence.translationTh}</p>
+          )}
+        </>
+      )}
+
       {/* Ijma, Qiyas, Istihsan, Maslaha */}
       {['ijma', 'qiyas', 'istihsan', 'maslaha'].includes(evidence.type) && (
         <>
