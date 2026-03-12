@@ -58,7 +58,7 @@ export interface ScholarAttribution {
 }
 
 export interface Evidence {
-  type: 'quran' | 'hadith' | 'athar' | 'ijma' | 'qiyas' | 'istihsan' | 'maslaha';
+  type: 'quran' | 'hadith' | 'athar' | 'ijma' | 'qiyas' | 'istihsan' | 'maslaha' | 'scholarly_reasoning';
   surahNumber?: number;
   surahName?: string;
   surahNameAr?: string;
