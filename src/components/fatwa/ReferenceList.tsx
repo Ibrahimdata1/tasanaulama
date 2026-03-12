@@ -9,14 +9,14 @@ export default function ReferenceList({ references }: ReferenceListProps) {
   if (references.length === 0) return null;
 
   return (
-    <div className="mt-3 border-t border-gray-200 pt-3">
-      <p className="text-xs font-semibold text-gray-500 mb-2">📚 อ้างอิง:</p>
+    <div className="mt-3 border-t border-gray-200 dark:border-zinc-700 pt-3">
+      <p className="text-xs font-semibold text-gray-500 dark:text-zinc-400 mb-2">📚 อ้างอิง:</p>
       <ol className="list-decimal list-inside space-y-2">
         {references.map((ref, i) => (
-          <li key={i} className="text-xs text-gray-600 leading-relaxed">
-            <span className="font-bold text-gray-800">{ref.bookTh}</span>
+          <li key={i} className="text-xs text-gray-600 dark:text-zinc-300 leading-relaxed">
+            <span className="font-bold text-gray-800 dark:text-zinc-100">{ref.bookTh}</span>
             {ref.bookAr && (
-              <span className="text-gray-400 mr-1"> ({ref.bookAr})</span>
+              <span className="text-gray-500 dark:text-zinc-400 mr-1"> ({ref.bookAr})</span>
             )}
             {ref.author && <span> — {ref.author}</span>}
             {ref.volume != null && <span>, เล่ม {ref.volume}</span>}
